@@ -1,0 +1,38 @@
+{
+  "name": "neo-email-ai",
+  "description": "Email-writer assistant ",
+  "version": "1.0",
+  "manifest_version": 3,
+   "permissions":["activeTab","storage"],
+
+   "host_permissions":[
+    "http://localhost:8080/*",
+    "*://mail.google.com/*"
+    ], 
+    "content_scripts":[
+        {
+            "js":[
+                "content_script.js"
+            ],
+            "matches":[
+                "*://mail.google.com/*"
+            ],
+             "css":[
+                "content.css"
+            ],
+            "run_at":"document_end"
+        }
+    ],
+    "action": {
+    "default_title":"Email Writer assistant",
+    "default_popup": "hello.html"
+    },
+    "web_accessible_resources": [
+    {
+      "resources": [ "icons/*" ],
+      "matches": [ "*://mail.google.com/*" ]
+    }
+  ]
+   
+   
+}

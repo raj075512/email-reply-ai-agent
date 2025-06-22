@@ -3,6 +3,9 @@
 
 A smart AI-powered assistant that connects to your email inbox, summarizes content, detects tone, and generates intelligent replies using Spring Boot, Spring AI, and Gemini LLM — all integrated with a Chrome Extension for seamless usage.
 
+## DEMO :
+![image](https://github.com/user-attachments/assets/9733276f-406b-4014-9e39-823884993655)
+
 ---
 
 ## 🚀 Features
